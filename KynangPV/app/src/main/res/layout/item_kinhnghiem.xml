@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip">
+        <ImageView android:layout_gravity="center"
+            android:id="@+id/imgAva"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/sentence"/>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip">
+            <TextView android:textSize="16.0sp"
+                android:textColor="#ff99cc00"
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:text="Kinh nghiệm học lập trình"/>
+            <TextView android:textSize="12.0sp"
+                android:textColor="#ff565656"
+                android:id="@+id/tvContent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_weight="1.0"
+                android:text="làm đi và làm đi"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

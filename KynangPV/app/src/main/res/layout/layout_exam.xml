@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="#336699"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="31.0dip"
+                    android:layout_height="31.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="comeBackExam"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_weight="5.0"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Trắc nghiệm"
+                    android:textColor="#ffffffff"
+                    android:textSize="22.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_weight="2.0"
+                android:gravity="left" >
+
+                <ImageView
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/countdowntime" />
+
+                <TextView
+                    android:id="@+id/txtCountDownTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center_horizontal"
+                    android:text="10:00"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="#336699"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/examPrevious"
+                android:layout_width="0.0dip"
+                android:layout_height="31.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:onClick="quaylai"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/examNext"
+                android:layout_width="0.0dip"
+                android:layout_height="31.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:onClick="tieptheo"
+                android:src="@drawable/next" />
+
+            <ImageView
+                android:id="@+id/examStop"
+                android:layout_width="0.0dip"
+                android:layout_height="31.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:onClick="ketthuc"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</LinearLayout>
