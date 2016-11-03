@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_size">
+        <item>13M 3264 x 4136 (16:9)</item>
+        <item>8M 3264 x 2448 (4:3)</item>
+        <item>6M 3264 x 1836 (16:9)</item>
+        <item>5M 2592 x 1944 (4:3)</item>
+        <item>4M 2592 x 1456 (16:9)</item>
+        <item>3M 2048 x 1536 (4:3)</item>
+        <item>2M 2048 x 1152 (16:9)</item>
+    </string-array>
+
+    <string-array name="auto_capture">
+        <item>Tắt</item>
+        <item>2 giây</item>
+        <item>10 giây</item>
+    </string-array>
+    
+    <string-array name="capture_continuity">
+        <item>Chụp 40 ảnh</item>
+        <item>Chụp 99 ảnh</item>
+    </string-array>
+    
+    <string-array name="iso">
+        <item>Tự động</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+    
+    <string-array name="while_balance">
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+    </string-array>
+
+    <string-array name="exposure_value">
+        <item>Tự động</item>
+        <item>Ánh sáng</item>
+        <item>Huỳnh quang</item>
+        <item>Nhiều mây</item>
+        <item>Sáng vàng</item>
+    </string-array>
+
+    <string-array name="effect_color">
+        <item>Không</item>
+        <item>Đơn âm</item>
+        <item>Nâu đỏ</item>
+        <item>Âm bản</item>
+        <item>Nâu lơ</item>
+    </string-array>
+
+    <string-array name="video_size">
+        <item>Trung bình</item>
+        <item>Cao</item>
+        <item>Nét</item>
+    </string-array>
+
+    <string-array name="saveto">
+        <item>Bộ nhớ trong</item>
+        <item>Thẻ nhớ</item>
+    </string-array>
+</resources>

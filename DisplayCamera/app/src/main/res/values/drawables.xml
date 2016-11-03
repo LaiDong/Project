@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="com_facebook_picker_default_separator_color">#33464c59</item>
+    <item type="drawable" name="detail_action_bar_background">#f21c1c1c</item>
+    <item type="drawable" name="sns_setting_item_background_nor">#ffffffff</item>
+    <item type="drawable" name="sns_setting_item_background_tap">#fff8f8f8</item>
+    <item type="drawable" name="sns_albumfeed_item_foreground_tap">#99000000</item>
+    <item type="drawable" name="sns_albumfeed_guide_foreground">#26000000</item>
+    <item type="drawable" name="sns_home_menu_background_event">#ff444444</item>
+    <item type="drawable" name="share_item_list_background_tap">#fff8f8f8</item>
+</resources>

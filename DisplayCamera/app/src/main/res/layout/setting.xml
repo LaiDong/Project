@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:fillViewport="true" >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="@style/settingGroupTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_group_bar_height"
+        android:text="@string/image_setting" />
+    <RelativeLayout
+        android:id="@+id/size"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image_size"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/size1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="13M pixel"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/while_balance"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/while_balance"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_whilebalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="Tự động"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/exposure_value"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exposure_value"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_exposurevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="Tự động"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    <RelativeLayout
+        android:id="@+id/effect_color"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/effect_color"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_effectcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="Không"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    <RelativeLayout
+        android:id="@+id/iso"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iso"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_iso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="0"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <TextView
+        style="@style/settingGroupTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_group_bar_height"
+        android:text="@string/capture_mode" />
+
+    <RelativeLayout
+        android:id="@+id/detect_face"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detect_face"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <com.example.ld.displaycamera.toggleui.SettingsToggle
+            android:id="@+id/item_detectface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    <RelativeLayout
+        android:id="@+id/smile_face"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/smile_face"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <com.example.ld.displaycamera.toggleui.SettingsToggle
+            android:id="@+id/item_smile_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    <RelativeLayout
+        android:id="@+id/capture_auto"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_auto"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_capture_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="@string/disable"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/capture_continuity"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_continuity"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_capture_continuity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="@string/_40img"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <TextView
+        style="@style/settingGroupTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_group_bar_height"
+        android:text="@string/video" />
+    <RelativeLayout
+        android:id="@+id/video_size"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_size"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_videosize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="@string/cao"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    <RelativeLayout
+        android:id="@+id/micro"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/micro"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <com.example.ld.displaycamera.toggleui.SettingsToggle
+            android:id="@+id/item_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    <TextView
+        style="@style/settingGroupTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_group_bar_height"
+        android:text="@string/others" />
+    <RelativeLayout
+        android:id="@+id/sound_camera"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sound_camera"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <com.example.ld.displaycamera.toggleui.SettingsToggle
+            android:id="@+id/item_soundcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/gps"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <Switch
+            android:id="@+id/item_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/saveto"
+        style="@style/SnsSettingListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_item_list_height"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveto"
+            android:textAppearance="@style/SnsSettingTextAppearance" />
+
+        <TextView
+            android:id="@+id/item_saveto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/setting_subtitle_text"
+            android:textSize="14.0sp"
+            android:text="@string/storage"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sns_setting_divider_height"
+        android:background="@color/sns_setting_divider" />
+    </LinearLayout>
+</ScrollView>

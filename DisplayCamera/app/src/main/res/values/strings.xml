@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">DisplayCamera</string>
+    <string name="image_setting">Cài đặt ảnh</string>
+    <string name="image_size">Kích thước ảnh</string>
+    <string name="while_balance">Cân bằng trắng</string>
+    <string name="exposure_value">Phơi sáng</string>
+    <string name="effect_color">Hiện ứng màu</string>
+    <string name="iso">ISO</string>
+
+    <string name="capture_mode">Chế độ chụp</string>
+    <string name="video">Cài đặt video</string>
+    <string name="video_size">Chất lượng video</string>
+    <string name="others">Cài đặt khác</string>
+    <string name="micro">Micro</string>
+    <string name="sound_camera">Âm camera</string>
+    <string name="gps">Dịch vụ định vị</string>
+    <string name="time_distance">Khoảng thời gian</string>
+    <string name="zsd">ZSD</string>
+    <string name="detect_face">Phát hiện khuôn mặt</string>
+    <string name="smile_face">Ảnh chụp mặt cười</string>
+    <string name="hdr">HDR</string>
+    <string name="capture_auto">Chế độ tự chụp</string>
+    <string name="size_preview">Cỡ xem trước</string>
+    <string name="capture_continuity">Chụp liên tục</string>
+    <string name="saveto">Lưu vào</string>
+
+    <string name="m13">13M 3264 x 4136 (16:9)</string>
+    <string name="m8">8M 3264 x 2448 (4:3)</string>
+    <string name="m6">6M 3264 x 1836 (16:9)</string>
+    <string name="m5">5M 2592 x 1944 (4:3)</string>
+    <string name="m4">4M 2592 x 1456 (16:9)</string>
+    <string name="m3">3M 2048 x 1536 (4:3)</string>
+    <string name="m2">2M 2048 x 1152 (16:9)</string>
+
+    <string name="trungbinh">Trung bình</string>
+    <string name="cao">Cao</string>
+    <string name="net">Nét</string>
+
+    <string name="disable_auto_capture">Tắt</string>
+    <string name="_2s">2 giây</string>
+    <string name="_10s">10 giây</string>
+
+    <string name="_40img">Chụp 40 ảnh</string>
+    <string name="_99img">Chụp 99 ảnh</string>
+
+    <string name="full_display">Toàn màn hình</string>
+    <string name="standard">Chuẩn(4:3)</string>
+
+    <string name="auto">Tự động</string>
+    <string name="iso_100">100</string>
+    <string name="iso_200">200</string>
+
+    <string name="session">Hội nghị</string>
+    <string name="normal">Thường</string>
+
+    <string name="disable">Tắt</string>
+    <string name="_1s">1 giây</string>
+    <string name="_1.5s">1,5 giây</string>
+
+    <string name="storage">Bộ nhớ trong</string>
+    <string name="microSD">Thẻ nhớ</string>
+
+    <string name="preferences_key">com.example.ld.displaycamera.toggleui</string>
+</resources>
