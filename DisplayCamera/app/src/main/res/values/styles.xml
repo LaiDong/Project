@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -39,4 +39,41 @@
         <item name="colorPrimary">@color/transparent</item>
     </style>
 
+    <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/accent_color</item>
+        <item name="android:listSeparatorTextViewStyle">@style/MPL_PreferenceListHeader</item>
+        <item name="colorPrimary">#FF03A9F4</item>
+        <item name="colorPrimaryDark">#FF0288D1</item>
+        <item name="actionBarTheme">@style/AppTheme.ActionBarTheme.Light</item>
+    </style>
+    <style name="MPL_PreferenceListHeader">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:paddingStart" tools:targetApi="17">?attr/listPreferredItemPaddingLeft
+        </item>
+        <item name="android:paddingLeft">?attr/listPreferredItemPaddingLeft</item>
+        <item name="android:paddingEnd" tools:targetApi="17">?attr/listPreferredItemPaddingRight
+        </item>
+        <item name="android:paddingRight">?attr/listPreferredItemPaddingRight</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+    <style name="AppTheme.ActionBarTheme.Light" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="ImageEditor_radiobutton">
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>

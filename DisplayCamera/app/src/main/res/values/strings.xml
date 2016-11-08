@@ -59,6 +59,11 @@
 
     <string name="storage">Bộ nhớ trong</string>
     <string name="microSD">Thẻ nhớ</string>
-
     <string name="preferences_key">com.example.ld.displaycamera.toggleui</string>
+
+    <string name="edit_filter">Filter</string>
+    <string name="edit_edit">Edit</string>
+    <string name="edit_adds">Adds</string>
+    <string name="edit_frame">Frame</string>
+    <string name="edit_beauty">Beauty</string>
 </resources>

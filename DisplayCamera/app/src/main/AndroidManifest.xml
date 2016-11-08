@@ -18,6 +18,8 @@
 
         <activity android:name=".Activity_Setting"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".SettingActivity"
+            android:theme="@style/AppTheme.Light"/>
     </application>
 
 </manifest>

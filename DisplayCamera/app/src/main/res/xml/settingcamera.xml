@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/image_setting"
+        android:key="pref_key_image_settings">
+    </PreferenceCategory>
+        <ListPreference
+            android:key="imagesizeST"
+            android:title="@string/image_size"
+            android:summary="%s"
+            android:entries="@array/pref_image_size_entries"
+            android:entryValues="@array/pref_image_size_values"
+            android:defaultValue="@string/m13"/>
+
+        <ListPreference
+            android:key="while_balanceST"
+            android:title="@string/while_balance"
+            android:summary="%s"
+            android:entries="@array/pref_while_balance_entries"
+            android:entryValues="@array/pref_while_balance_values"
+            android:defaultValue="@string/auto"/>
+
+        <ListPreference
+            android:key="exposureST"
+            android:title="@string/exposure_value"
+            android:summary="%s"
+            android:entries="@array/pref_exposure_entries"
+            android:entryValues="@array/pref_exposure_values"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:key="effect_colorST"
+            android:title="@string/effect_color"
+            android:summary="%s"
+            android:entries="@array/pref_effect_color_entries"
+            android:entryValues="@array/pref_effect_color_values"
+            android:defaultValue="Không"/>
+
+        <ListPreference
+            android:key="isoST"
+            android:title="@string/iso"
+            android:summary="%s"
+            android:entries="@array/pref_iso_entries"
+            android:entryValues="@array/pref_iso_values"
+            android:defaultValue="100"/>
+
+    <PreferenceCategory
+        android:title="@string/capture_mode"
+        android:key="pref_key_capture_mode_settings">
+    </PreferenceCategory>
+
+    <SwitchPreference
+        android:key="pref_key_detect_face"
+        android:summary=""
+        android:title="@string/detect_face"/>
+
+    <SwitchPreference
+        android:key="pref_key_smile_face"
+        android:summary=""
+        android:title="@string/smile_face"/>
+
+    <ListPreference
+        android:key="auto_captureST"
+        android:title="@string/capture_auto"
+        android:summary="%s"
+        android:entries="@array/pref_auto_capture_entries"
+        android:entryValues="@array/pref_auto_capture_values"
+        android:defaultValue="Tắt"/>
+
+    <ListPreference
+        android:key="capture_continuityST"
+        android:title="@string/capture_continuity"
+        android:summary="%s"
+        android:entries="@array/pref_capture_continuity_entries"
+        android:entryValues="@array/pref_auto_capture_entries"
+        android:defaultValue="@string/_40img"/>
+
+    <PreferenceCategory
+        android:title="@string/video"
+        android:key="pref_key_video_settings">
+    </PreferenceCategory>
+
+    <ListPreference
+        android:key="video_sizeST"
+        android:title="@string/video_size"
+        android:summary="%s"
+        android:entries="@array/pref_video_size_entries"
+        android:entryValues="@array/pref_video_size_values"
+        android:defaultValue="@string/cao"/>
+
+    <SwitchPreference
+        android:key="pref_key_micro"
+        android:summary=""
+        android:title="@string/micro"/>
+
+    <PreferenceCategory
+        android:title="@string/others"
+        android:key="pref_key_other_settings">
+    </PreferenceCategory>
+
+    <SwitchPreference
+        android:key="pref_key_sound_camera"
+        android:summary=""
+        android:title="@string/sound_camera"/>
+
+    <SwitchPreference
+        android:key="pref_key_gps"
+        android:summary=""
+        android:title="@string/gps"/>
+
+    <ListPreference
+        android:key="savetoST"
+        android:title="@string/saveto"
+        android:summary="%s"
+        android:entries="@array/pref_saveto_entries"
+        android:entryValues="@array/pref_saveto_values"
+        android:defaultValue="@string/storage"/>
+</PreferenceScreen>

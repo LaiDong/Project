@@ -60,7 +60,7 @@
             android:layout_alignParentRight="true"
             android:textColor="@color/setting_subtitle_text"
             android:textSize="14.0sp"
-            android:text="Tự động"/>
+            android:text="0"/>
     </RelativeLayout>
     <View
         android:layout_width="fill_parent"
@@ -348,7 +348,7 @@
             android:text="@string/gps"
             android:textAppearance="@style/SnsSettingTextAppearance" />
 
-        <Switch
+        <com.example.ld.displaycamera.toggleui.SettingsToggle
             android:id="@+id/item_gps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

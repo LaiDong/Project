@@ -11,18 +11,11 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 public class MainActivity extends Activity {
-    @InjectView(R.id.btn_setting)
-    ImageView btn_setting;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_camera);
-        ButterKnife.inject(this);
+        setContentView(R.layout.activity_main);
     }
 
-    @OnClick(R.id.btn_setting)
-    void btn_setting(){
-        Intent i = new Intent(this, Activity_Setting.class);
-        startActivity(i);
-    }
 }
