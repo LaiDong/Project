@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff7f7f7"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/data_flow_switch_layout"
+            style="@style/linearlayout_menu_list_item"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/data_mobile_tx"
+                style="@style/linearlayout_menu_left_textview"
+                android:text="@string/IDS_plugin_settings_data_flow_switch" />
+
+           <Switch
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/switch_mobidata"/>
+        </LinearLayout>
+
+        <View
+            style="@style/CommonLineStyle" />
+
+        <LinearLayout
+            android:id="@+id/data_roaming_switch_layout"
+            style="@style/linearlayout_menu_list_item"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/data_roaming_tx"
+                style="@style/linearlayout_menu_left_textview"
+                android:text="@string/IDS_plugin_settings_data_roaming_switch" />
+
+            <Switch
+                android:id="@+id/switch_data_roaming"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/CommonLineStyle" />
+
+        <LinearLayout
+            android:id="@+id/apn_setting_layout"
+            style="@style/linearlayout_menu_list_item" >
+
+            <TextView
+                android:id="@+id/apn_tx"
+                style="@style/linearlayout_menu_left_textview"
+                android:layout_width="fill_parent"
+                android:drawableRight="@drawable/ic_enter"
+                android:text="@string/IDS_plugin_settings_apn" />
+        </LinearLayout>
+
+        <View
+            style="@style/CommonLineStyle" />
+
+        <LinearLayout
+            android:id="@+id/net_lansetting_layout"
+            style="@style/linearlayout_menu_list_item" >
+
+            <TextView
+                android:id="@+id/net_lansetting_txt"
+                style="@style/linearlayout_menu_left_textview"
+                android:layout_width="fill_parent"
+                android:drawableRight="@drawable/ic_enter"
+                android:text="@string/IDS_plugin_settings_network_operators" />
+        </LinearLayout>
+
+        <View
+            style="@style/CommonLineStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/warning"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/server_warnning"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/warning" />
+    </LinearLayout>
+
+</RelativeLayout>

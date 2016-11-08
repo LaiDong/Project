@@ -1,0 +1,166 @@
+
+<html>
+   <head>
+      <link rel="stylesheet" href='stylemain.css' type='text/css'>
+         <link rel="stylesheet" href='colors.css' type='text/css'>
+            <meta http-equiv="Pragma" content="no-cache">
+            <meta http-equiv="refresh" content="20">
+            <title></title>
+            <base target="_self">
+   </head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script language="javascript">
+<!-- hide
+
+function getresponse(){
+	var saveData =	$.ajax({
+		type: 'POST',
+		url: 'http://192.168.43.1:8080/',
+		traditional: true,
+		data: {'json/text':'jsondevice'},
+		success: function(msg){
+			if(msg.indexOf('osVersion')){			
+				var JsonObject = JSON.parse(msg);
+				document.getElementById('os').innerHTML	 = JsonObject.osVersion;
+				document.getElementById('device').innerHTML	 = JsonObject.device;
+				document.getElementById('model').innerHTML	 = JsonObject.model;
+				document.getElementById('battery').innerHTML	 = JsonObject.batteryLevel;
+				document.getElementById('imei').innerHTML	 = JsonObject.imei;
+				if(document.getElementById('imsi').innerHTML == ""){
+					document.getElementById('imsi').innerHTML = "unknown";		
+				}else
+					document.getElementById('imsi').innerHTML	 = JsonObject.imsi;
+				if(document.getElementById('netid').innerHTML == ""){
+					document.getElementById('netid').innerHTML = "unknown";
+				}else
+					document.getElementById('netid').innerHTML	 = JsonObject.networkID;
+				if(document.getElementById('netname').innerHTML == ""){
+					document.getElementById('netname').innerHTML = "unknown";
+				}else
+					document.getElementById('netname').innerHTML = JsonObject.networkName;
+			}else{
+				alert("response fail!!!");
+
+			}
+		}
+	 });
+	saveData.error(function(){
+			alert("Something went wrong");
+		});
+
+}
+
+var numCpuThreads = '1';
+if ( numCpuThreads == 2 ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Symmetric CPU Threads:</td>");
+  document.writeln("                  <td>1</td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>
+
+   <body onload="getresponse();">
+      <blockquote>
+         <form><table>
+            <tr><td class="h1">Device Info</td></tr>
+               <table border="1" cellpadding="3" cellspacing="0" style="width:500">
+			   <br>
+               <tr>
+                  <td class='hd' width="50%">Product name:</td>
+                  <td width="50%">Wifi Hotspot</td>
+               </tr>
+
+
+               <tr>
+                  <td class='hd' width="50%">Build Timestamp:</td>
+                  <td width="50%">150721_0922</td>
+               </tr>
+                <tr>
+                  <td class='hd' width="50%">Software Version:</td>
+                  <td width="50%">A1.09L.08RTM</td>
+               </tr>
+<script language="javascript">
+<!-- hide
+var buildAtm = '1';
+var buildPtm = '0';
+// done hiding -->
+</script>
+<script language="javascript">
+<!-- hide
+	
+var buildMoca = '0';
+if ( buildMoca == 1 ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Moca Version:</td>");
+  document.writeln("                  <td></td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>
+
+<script language="javascript">
+<!-- hide
+var voice = '';
+if ( voice == 'SIP' || voice == 'MGCP' ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Voice Service Version:</td>");
+  document.writeln("                  <td></td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>
+               <tr>
+                  <td class='hd' width="50%">Uptime:</td>
+                  <td width="50%">0D 0H 5M 45S</td>
+               </tr>
+
+        </table>
+            <br>
+             <tr>This information reflects the current status of your DEVICE connection.</tr><br>
+            <br>
+            <table border="1" cellpadding="3" cellspacing="0" style="width:500">
+              
+               <tr>
+                  <td class='hd' width="50%">LAN IPv4 Address:</td>
+                  <td width="50%">192.168.43.1</td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">OS API Level:</td>
+                  <td width="50%" id = "os"></td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">Device Information:</td>
+                  <td width="50%" id = "device"></td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">Model:</td>
+                  <td width="50%" id = "model"></td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">Battery Level:</td>
+                  <td width="50%" id = "battery"></td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">IMEI:</td>
+                  <td width="50%" id = "imei"></td>
+               </tr>
+                <tr>
+                  <td class='hd' width="50%">IMSI:</td>
+                  <td width="50%" id = "imsi"></td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">NetWork Operator ID:</td>
+                  <td width="50%" id = "netid"></td>
+               </tr>
+               <tr>
+                  <td class='hd' width="50%">NetWork Operator Name:</td>
+                  <td width="50%" id = "netname"></td>
+               </tr>
+
+            </table>
+			</table>
+         </form>
+      </blockquote>
+   </body>
+</html>

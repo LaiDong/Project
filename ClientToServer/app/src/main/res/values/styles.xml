@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="linearlayout_menu_list_item">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/traffic_setting_item_background</item>
+        <item name="android:paddingLeft">@dimen/about_item_padingleftright</item>
+        <item name="android:paddingRight">@dimen/about_item_padingleftright</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/list_item_height_1text</item>
+    </style>
+
+    <style name="linearlayout_menu_left_textview" parent="@style/menu_left_textview_font">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="menu_left_textview_font">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#d9000000</item>
+    </style>
+
+    <style name="CommonLineStyle">
+        <item name="android:background">@color/black_15alpha</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_line_height</item>
+    </style>
+
+    <style name="linearlayout_menu_red_left_textview" parent="@style/menu_left_textview_font">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="linearlayout_menu_red">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:src">@drawable/red</item>
+    </style>
+
+    <style name="linearlayout_menu_red_right_textview" parent="@style/menu_right_textview_font">
+        <item name="android:gravity">center|right</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:drawableRight">@drawable/ic_enter</item>
+        <item name="android:drawablePadding">@dimen/menu_layout_tv_drawable_padding</item>
+    </style>
+    <style name="menu_right_textview_font">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/black_65alpha</item>
+    </style>
+
+    <style name="SettingsFontWithLittleRightPadding">
+        <item name="android:textSize">@dimen/setting_item_tx_size</item>
+        <item name="android:textColor">#d9000000</item>
+        <item name="android:paddingLeft">@dimen/about_item_padingleftright</item>
+        <item name="android:paddingRight">@dimen/about_item_padingright</item>
+    </style>
+
+    <style name="SettingsFontRight">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#d9000000</item>
+        <item name="android:paddingLeft">@dimen/about_item_padingleftright</item>
+        <item name="android:paddingRight">@dimen/about_item_padingleftright</item>
+    </style>
+
+    <style name="ParentControlBottom">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">@color/black_65alpha</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:paddingBottom">7.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="tipstext">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#a5000000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#fff0f0f0</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/section_divider_min_height</item>
+    </style>
+    <style name="black_default">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#d8000000</item>
+    </style>
+    <style name="black_12sp_65alpha">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#a5000000</item>
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please Wait</item>
+        <item name="DialogSpotColor">@android:color/holo_orange_dark</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+</resources>

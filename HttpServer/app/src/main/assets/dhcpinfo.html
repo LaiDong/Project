@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <meta HTTP-EQUIV='Pragma' CONTENT='no-cache'>
+      <link rel="stylesheet" href='stylemain.css' type='text/css'>
+         <link rel="stylesheet" href='colors.css' type='text/css'>
+		  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/base/jquery-ui.css">
+          <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script type="text/javascript" language="javascript">
+<!-- hide
+
+var sessionKey='1288686150';
+function btnReset() {
+   var loc = 'rebootinfo.cgi?';
+
+   loc += 'sessionKey=' + sessionKey;
+
+   var code = 'location="' + loc + '"';
+   eval(code);
+}
+
+function btnReboot() {
+               var retVal = confirm("Do you want to continue ?");
+               if( retVal == true ){
+                    var saveData =	$.ajax({
+					type: 'POST',
+					url: 'http://192.168.43.1:8080/',
+					traditional: true,
+					data: {'reboot': 'reboot'},
+					success: function(msg){
+						if(msg.indexOf('success'))
+								alert("success");
+					//	else
+					//		alert("response fail!!!");
+					}
+				});
+				saveData.error(function(){
+			alert("Disconnect to wifi hotspot. Please reconnect to new wifi hotspot");
+		});
+                  return true;
+               }
+               else{
+                  
+                  return false;
+               }
+            
+}
+
+// done hiding -->
+</script>
+   </head>
+   <body>
+      <blockquote>
+         <center>
+            <br>
+            <strong>Click the button below to reboot the Modem.</strong>
+     </center>
+      </blockquote>
+      <p align="center">
+         <input type='button' onClick='btnReboot()' value='Reboot'>
+         <br>
+      </p>
+   </body>
+</html>

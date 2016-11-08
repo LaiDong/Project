@@ -1,0 +1,120 @@
+
+<html>
+   <head>
+      <link rel="stylesheet" href='stylemain.css' type='text/css'>
+         <link rel="stylesheet" href='colors.css' type='text/css'>
+            <meta http-equiv="Pragma" content="no-cache">
+            <title></title>
+            <base target="_self">
+   </head>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script language="javascript">
+	   
+function frmLoad() {
+	wlssid.value = 'Wifi-hotspot-vnpt';
+	$(function () {
+        $("#wlEnableSercurity").click(function () {
+            if ($(this).is(":checked")) {
+                $("#password").show();
+                
+            } else {
+                $("#password").hide();
+            }
+        });
+    });
+}
+	   
+function btnApply() {
+	 var ssid = new String();
+	 var key = new String();
+	 var config = new String();
+	 key = password.value;
+	 ssid = wlssid.value;
+	 config = ssid + '#' + key;
+	 if(ssid == ''){
+		alert('Please enter your ssid.');
+        return;
+	}
+	 if(key == ''){
+       var saveData =	$.ajax({
+		type: 'POST',
+		url: 'http://192.168.43.1:8080/',
+		traditional: true,
+		data: {'changeSSID': ssid},
+		success: function(msg){
+			if(msg.indexOf('success'))
+					alert("success");
+		//	else
+		//		alert("response fail!!!");
+		}
+	});
+	
+	saveData.error(function(){
+			alert("Disconnect to wifi hotspot. Please reconnect to new wifi hotspot");
+		});
+	 window.location.href="index.html";
+	}else {
+	if ( key.length < 8) {
+	 alert('Password must be longer 7 character');
+		return;
+	 }
+	  var saveData =	$.ajax({
+		type: 'POST',
+		url: 'http://192.168.43.1:8080/',
+		traditional: true,
+		data: {'wificonfig': config},
+		success: function(msg){
+			if(msg.indexOf('success'))
+					alert("success");
+		//	else
+		//		alert("response fail!!!");
+		}
+	});
+	saveData.error(function(){
+			alert("Disconnect to wifi hotspot. Please reconnect to new wifi hotspot");
+		});
+	 window.location.href="index.html";
+}
+ 
+}
+
+</script>
+
+   <body onLoad='frmLoad()'>
+      <blockquote>
+         <form><table>
+            <tr><td class="h1">Wifi Hotspot</td></tr>
+		<tr>
+		 <td width="50">SSID:</td>
+                  <td>
+                        <input type='text' id='wlssid' maxlength="32" size="32"></td>
+                  </tr>   
+                   <tr>
+                     <td width="50">Shared Key:</td>
+                     <td>
+                        <input type="password" id='password' style="display: none" maxlength="32" size="32"></td>
+                  </tr>   
+                  <tr>
+                  <td valign="middle" align="center" width="30" height="30">
+                     <input type='checkbox' id='wlEnableSercurity' value="ON"></td>
+                  <td><div id="wlEnableSercurityText"> Enable Sercurity</div></td>
+				  </tr>
+				  
+				   <tr>
+                  <td valign="middle" align="center" width="30" height="30">
+                     <input type='checkbox' onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'"></td>
+                  <td><div id="wlShowpasswordText"> Show Password</div></td>
+				  </tr>
+               
+                   <div id="divApply">           
+					  <center><table border="0" cellpadding="10" cellspacing="40">
+					   <tr> <td>        
+					   <input type='button' onClick='btnApply()' value='Apply/Save'>
+					   </td> </tr>
+					  </table></center>
+					</div>
+         </form>
+      </blockquote>
+   </body>
+</html>

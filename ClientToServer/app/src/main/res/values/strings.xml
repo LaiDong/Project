@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">VnptLink</string>
+    <string name="ui_menu_setting">Setting</string>
+    <string name="nick_name">User name</string>
+    <string name="password">Password</string>
+    <string name="password_current">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="re_password">Confilm new password</string>
+    <string name="reboot">reboot</string>
+    <string name="json_device">jsondevice</string>
+    <string name="battery">pin</string>
+    <string name="enable_mobile_data">enablemobiledata</string>
+    <string name="disable_mobile_data">disablemobiledata</string>
+    <string name="enable_data_roaming">enabledataroaming</string>
+    <string name="disable_data_roaming">disabledataroaming</string>
+    <string name="enable_wifi_auto">enablewifiauto</string>
+    <string name="disable_wifi_auto">disablewifiauto</string>
+    <string name="enable_smart_power">enablesmartpower</string>
+    <string name="disable_smart_power">disablesmartpower</string>
+    <string name="user_management">user</string>
+    <string name="USER_AGENT">Mozilla/5.0</string>
+    <string name="warning">Device not connected. Please check network settings.</string>
+    <string name="no_device">No devices</string>
+    <string name="not_login">Not Logged In</string>
+
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login_success">Login success</string>
+    <string name="login_fail">Login fail</string>
+    <string name="register">Register</string>
+    <string name="changePass">Change</string>
+    <string name="reset">Reset</string>
+    <string name="change_success">Change password success</string>
+    <string name="change_fail">Password is not exists</string>
+
+    <string name="enter_nick">Please enter your nick name</string>
+    <string name="enter_pass">Please enter your password</string>
+    <string name="enter_currentpass">Please enter your password</string>
+    <string name="enter_new_pass">Please enter your new password</string>
+    <string name="enter_re_pass">Please re enter your password</string>
+    <string name="pass_not_match">Password not match</string>
+    <string name="repass_not">repass unlike newpass</string>
+    <string name="user_invalid">User is invalid.</string>
+
+    <string name="wait">Please wait…</string>
+    <string name="reboot_device">Server device reboot success!!!</string>
+
+    <string name="save">Save</string>
+    <string name="exit">Exit</string>
+    <string name="sercurity">Sercurity</string>
+    <string name="ssid">SSID Mạng</string>
+    <string name="ShareKey">Password</string>
+    <string name="showpass">Show password</string>
+    <string name="enter_ssid">Please enter your ssid name</string>
+    <string name="wificonfig">Server configuration wifi success</string>
+    <string name="wificonfig_fail">Server configuration wifi fail!!!</string>
+    <string name="condition_length_pass">Password must be more 8 characters long</string>
+
+    // new
+    <string name="IDS_plugin_settings_device_info">Device Information</string>
+    <string name="IDS_plugin_settings_update_system_software">Update System Software</string>
+    <string name="IDS_plugin_settings_reboot">Reboot</string>
+    <string name="IDS_plugin_settings_account_modify_password">Modify login password</string>
+    <string name="IDS_plugin_settings_account_logout">Log out</string>
+    <string name="IDS_common_unknown">Unknown</string>
+    <string name="IDS_plugin_settings_device_setting">Device settings</string>
+    <string name="IDS_plugin_settings_pin">PIN management</string>
+    <string name="IDS_plugin_setting_simlock_unlock_device">Unlock device</string>
+    <string name="IDS_plugin_harddisk_storage_title">Hard disk management</string>
+    <string name="IDS_plugin_setting_led">Indicator</string>
+    <string name="IDS_plugin_settings_restore_factory">Restore factory settings</string>
+    <string name="IDS_plugin_settings_restart">Reboot</string>
+    <string name="IDS_plugin_settings_power_off">Power off</string>
+    <string name="IDS_plugin_settings_device_information">Device information</string>
+    <string name="IDS_plugin_storage_title">Storage</string>
+    <string name="IDS_plugin_setting_shop_assist">Price comparison</string>
+    <string name="IDS_main_menu_subtitle_account">Account</string>
+    <string name="IDS_main_login_page_title">My Wi-Fi</string>
+    <string name="IDS_main_menu_subtitle_net">Network</string>
+    <string name="IDS_main_menu_subtitle_device">Device</string>
+    <string name="IDS_main_menu_subtitle_scan">Scan</string>
+    <string name="IDS_main_menu_subtitle_about">About</string>
+    <string name="IDS_plugin_settings_data_flow_switch">Mobile data</string>
+    <string name="IDS_plugin_settings_data_roaming_switch">Data roaming</string>
+    <string name="IDS_plugin_setting_communication_mode">Communication mode</string>
+    <string name="IDS_plugin_settings_apn">APN</string>
+    <string name="IDS_plugin_settings_network_operators">Network carrier</string>
+    <string name="IDS_plugin_settings_profile_new">New</string>
+    <string name="IDS_common_btn_delete">Delete</string>
+    <string name="IDS_plugin_battery_power_management">Power management</string>
+    <string name="IDS_plugin_battery_smart_saving">Smart power saving</string>
+    <string name="IDS_plugin_battery_wlan_saving_description">Wi-Fi will automatically turn off if the connection is idle for a long time</string>
+    <string name="IDS_plugin_battery_wlan_saving">Wi-Fi</string>
+</resources>

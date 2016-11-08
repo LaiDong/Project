@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff7f7f7"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/device_name"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/signal"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/channel"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/mac_address"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/layout_wifi_mode"
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/wifi_mode"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_wifi_mode"
+                style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/layout_link_speed"
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/link_speed"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_link_speed"
+                style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/layout_rssi"
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/rssi"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_rssi"
+                style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/layout_snr"
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/snr"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_snr"
+                style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/layout_send_packages"
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/send_packages"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_send_packages"
+                style="@style/CommonLineStyle" />
+
+            <LinearLayout
+                android:id="@+id/layout_receive_packages"
+                style="@style/linearlayout_menu_list_item"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/receive_packages"
+                    style="@style/linearlayout_menu_left_textview"
+                    android:text="@string/IDS_common_unknown" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_receive_packages"
+                style="@style/CommonLineStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

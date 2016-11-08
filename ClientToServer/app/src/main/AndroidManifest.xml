@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ld.clienttoserver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>ss
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".deviceserver.MainGetJson"/>
+        <activity android:name=".activity.login.ActivityLogin"/>
+        <activity android:name=".activity.control.ActivityControl"/>
+        <activity android:name=".activity.account.ActivityChangePass"/>
+        <activity android:name=".activity.hotspot.ActivityWifiConfig"/>
+        <activity android:name=".activity.menusetting.ActivitySetting"/>
+        <activity android:name=".activity.battery.ActivityBattery"/>
+        <activity android:name=".activity.devicesetting.ActivityDeviceSetting"/>
+        <activity android:name=".activity.network.ActivityNetwork"/>
+        <activity android:name=".activity.usermanagement.User"/>
+        <activity android:name=".activity.account.ActivityAccount"/>
+        <activity android:name=".activity.qrcodescan.QRCodeScan"/>
+
+        <service android:name=".bandwidth.Checkbandwidth"/>
+        <service android:name=".activity.battery.ServiceNotification"/>
+    </application>
+
+</manifest>

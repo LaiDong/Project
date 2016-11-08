@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_setupwifi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/linearlayout_menu_list_item">
+        <TextView
+            android:id="@+id/setup_tv_wifi"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/ic_wifi_lock"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/IDS_main_login_page_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setup_wifi_tv"
+                    style="@style/SettingsFontRight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/list_item_height_1text"
+                    android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+                    android:drawableRight="@drawable/ic_enter"
+                    android:text="@string/no_device"
+                    android:gravity="center|right"
+                    android:textColor="@color/menu_wifi_right_tv_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        style="@style/CommonLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/linearlayout_menu_list_item">
+        <TextView
+            android:id="@+id/setup_tv_accout"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/IDS_main_menu_subtitle_account" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setup_account_tv"
+                    style="@style/SettingsFontRight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/list_item_height_1text"
+                    android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+                    android:drawableRight="@drawable/ic_enter"
+                    android:text="@string/not_login"
+                    android:gravity="center|right"
+                    android:textColor="@color/menu_wifi_right_tv_color" />
+
+              </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <View
+        style="@style/CommonLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_network"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/linearlayout_menu_list_item">
+        <TextView
+            android:id="@+id/setup_tv_network"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/ic_interent"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/IDS_main_menu_subtitle_net" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setup_network_tv"
+                    style="@style/SettingsFontRight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/list_item_height_1text"
+                    android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+                    android:drawableRight="@drawable/ic_enter"
+                    android:gravity="center|right"
+                    android:textColor="@color/menu_wifi_right_tv_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/CommonLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/linearlayout_menu_list_item">
+        <TextView
+            android:id="@+id/setup_tv_scan"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/ic_scan"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/IDS_main_menu_subtitle_scan" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setup_scan_tv"
+                    style="@style/SettingsFontRight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/list_item_height_1text"
+                    android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+                    android:drawableRight="@drawable/ic_enter"
+                    android:gravity="center|right"
+                    android:textColor="@color/menu_wifi_right_tv_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/CommonLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/linearlayout_menu_list_item">
+        <TextView
+            android:id="@+id/setup_tv_about"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/ic_about"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/IDS_main_menu_subtitle_about" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setup_about_tv"
+                    style="@style/SettingsFontRight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/list_item_height_1text"
+                    android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+                    android:drawableRight="@drawable/ic_enter"
+                    android:gravity="center|right"
+                    android:textColor="@color/menu_wifi_right_tv_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/CommonLineStyle" />
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/warning"
+            style="@style/SettingsFontWithLittleRightPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height_1text"
+            android:drawableLeft="@drawable/server_warnning"
+            android:drawablePadding="@dimen/menu_layout_tv_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/warning" />
+    </LinearLayout>
+
+</RelativeLayout>
