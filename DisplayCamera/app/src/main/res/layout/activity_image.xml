@@ -85,5 +85,33 @@
             android:layout_alignParentTop="true"
             android:layout_above="@+id/image_edit_layout" />
 
+        <RelativeLayout
+            android:id="@+id/image_edit_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@android:color/black">
+            <ImageView
+                android:id="@+id/image_edit_back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_image_back"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:id="@+id/image_edit_save"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_image_save"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chỉnh sửa ảnh"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
     </RelativeLayout>
 </FrameLayout>

@@ -4,10 +4,12 @@
     android:layout_height="fill_parent"
     android:background="#ffffffff"
     android:fillViewport="true" >
+
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <TextView
         style="@style/settingGroupTitleBar"
         android:layout_width="fill_parent"
@@ -385,5 +387,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/sns_setting_divider_height"
         android:background="@color/sns_setting_divider" />
+
     </LinearLayout>
+
 </ScrollView>

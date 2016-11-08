@@ -1,8 +1,14 @@
 package com.example.ld.displaycamera;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import butterknife.ButterKnife;
@@ -13,7 +19,7 @@ import butterknife.OnClick;
  * Created by ld on 11/2/16.
  */
 
-public class Activity_Setting extends AppCompatActivity{
+public class Activity_Setting extends AppCompatActivity {
    /* @InjectView(R.id.size)
     RelativeLayout rlsize_image;
     @InjectView(R.id.while_balance)
@@ -37,6 +43,8 @@ public class Activity_Setting extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setting);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
         ButterKnife.inject(this);
     }
 
@@ -92,5 +100,16 @@ public class Activity_Setting extends AppCompatActivity{
     void setSaveto(){
         CharSequence[] values = getResources().getStringArray(R.array.saveto);
         ItemsDialog.getInstance(this).CreateAlertDialogWithRadioButtonGroup(getString(R.string.saveto),values);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
