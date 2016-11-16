@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_for_page_four"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/status_bar_for_page_four"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/status_bar_layout"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/controll_core_app_ll_p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_bar_for_page_four"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/playStoreIv_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/custome_playstore_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/fullAppIv_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/custome_fullapp_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/youtubeIv_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/custome_youtube_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/browserIv_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/custome_browser_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/settingIv_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/custome_setting_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/fileManagerIv_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custome_filemanger_iv"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_btn_page_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custome_back_activity_iv"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/next_btn_page_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custome_next_activity_iv"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/logo_page_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/back_btn_page_four"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/show_status_bar_page_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custome_show_stb_iv"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/content_page_four_ll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/controll_core_app_ll_p4"
+        android:layout_below="@+id/logo_page_four"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_toLeftOf="@+id/next_btn_page_four"
+        android:layout_toRightOf="@+id/back_btn_page_four"
+        android:focusable="true" >
+
+        <LinearLayout
+            android:id="@+id/entertaiment_LL_Page_Four"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/entertaiment_title_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/entertaiment_title_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/entertaiment_RL_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/movie_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/custome_movies_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/music_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@+id/movie_iv_Page_Four"
+                    android:background="@drawable/custome_music_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/karaoke_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/movie_iv_Page_Four"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/movie_iv_Page_Four"
+                    android:background="@drawable/custome_karaoke_p4_iv"
+                    android:focusable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/news_LL_Page_Four"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/news_title_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/news_title_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/news_RL_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/political_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/custome_political_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/economi_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@+id/political_iv_Page_Four"
+                    android:background="@drawable/custome_economi_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/entertaiment_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/political_iv_Page_Four"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/economi_iv_Page_Four"
+                    android:background="@drawable/custome_entertaiment_p4_iv"
+                    android:focusable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/education_LL_Page_Four"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/education_title_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:focusable="true"
+                android:text="@string/education_title_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/edu_RL_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/chil_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/custome_chil_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/mother_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@+id/chil_iv_Page_Four"
+                    android:background="@drawable/custome_mother_p4_iv"
+                    android:focusable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/others_LL_Page_Four"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/others_title_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:focusable="true"
+                android:text="@string/others_title_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/others_RL_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/shopping_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/custome_shopping_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/game_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@+id/shopping_iv_Page_Four"
+                    android:background="@drawable/custome_game_p4_iv"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/others_iv_Page_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/shopping_iv_Page_Four"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/game_iv_Page_Four"
+                    android:background="@drawable/custome_others_p4_iv"
+                    android:focusable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wifiStatusPageFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="70.0dip"
+        android:paddingTop="7.0dip"
+        android:src="@drawable/nowifi" />
+
+</RelativeLayout>

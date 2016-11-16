@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/bg_Img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/backBtnP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/custome_back_activity_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/nextBtnP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/custome_next_activity_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/backBtnP1"
+            android:src="@drawable/logo" />
+
+        <DigitalClock
+            android:id="@+id/digital_Clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="@dimen/digital_clock_page_one_marginLeft"
+            android:layout_toLeftOf="@+id/nextBtnP1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/digital_clock_page_one_textsize" />
+
+        <TextView
+            android:id="@+id/date_page_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/digital_Clock"
+            android:layout_marginLeft="@dimen/digital_clock_page_one_marginLeft"
+            android:layout_toLeftOf="@+id/nextBtnP1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/date_page_one_textsize" />
+
+        <include
+            android:id="@+id/layout_status_bar_include"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/status_bar_layout"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/showStatusBarIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/custome_show_stb_iv"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:id="@+id/controll_core_app_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_status_bar_include"
+            android:layout_centerInParent="true"
+            android:focusable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/playStoreIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/custome_playstore_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/fullAppIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/custome_fullapp_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/youtubeIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/custome_youtube_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/browserIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/custome_browser_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/settingIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/custome_setting_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/fileManagerIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custome_filemanger_iv"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageChangeStatusIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/controll_core_app_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:src="@drawable/icon_slide" />
+
+        <RelativeLayout
+            android:id="@+id/control_galary"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/imageChangeStatusIv"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:padding="@dimen/padding" >
+
+            <FrameLayout
+                android:id="@+id/galaryFL"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/customborder" >
+
+                <ImageView
+                    android:id="@+id/galaryIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding"
+                    android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:id="@+id/back_next_galary_btn_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/back_for_Galary_PageOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|left"
+                        android:focusable="true"
+                        android:src="@drawable/prev_slide" />
+
+                    <ImageView
+                        android:id="@+id/next_for_Galary_PageOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|right"
+                        android:focusable="true"
+                        android:src="@drawable/next_slide" />
+
+                    <ImageView
+                        android:id="@+id/setting_for_galary_iv"
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:focusable="true"
+                        android:src="@drawable/settings_icon" />
+
+                    <ImageView
+                        android:id="@+id/chooseAlbumIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/setting_for_galary_iv"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@drawable/custome_albumsilde_iv"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/fullScreenIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/chooseAlbumIv"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/custome_full_image_p1_iv"
+                        android:focusable="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/changeBackground"
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nextBtnP1"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cling" />
+
+        <LinearLayout
+            android:id="@+id/wifi_download_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/nextBtnP1"
+            android:paddingRight="60.0dip"
+            android:paddingTop="7.0dip" >
+
+            <ImageView
+                android:id="@+id/wifiStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nowifi" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

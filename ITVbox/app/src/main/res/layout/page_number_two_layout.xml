@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_page_two"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/status_bar_for_page_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/status_bar_layout"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/back_btn_page_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custome_back_activity_iv"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/next_btn_page_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custome_next_activity_iv"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/logo_page_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/back_btn_page_two"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title_page_two_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_marginLeft"
+        android:layout_toRightOf="@+id/logo_page_two"
+        android:paddingTop="@dimen/title_padding_top"
+        android:text="@string/title_page_four"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_title_page_four" />
+
+    <ImageView
+        android:id="@+id/show_status_bar_page_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custome_show_stb_iv"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/content_page_two_ll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/status_bar_for_page_two"
+        android:layout_below="@+id/logo_page_two"
+        android:layout_marginLeft="@dimen/content_page_two_ll_layout_magin"
+        android:layout_marginRight="@dimen/content_page_two_ll_layout_magin"
+        android:layout_marginTop="@dimen/content_page_two_ll_layout_magin"
+        android:layout_toLeftOf="@+id/next_btn_page_two"
+        android:layout_toRightOf="@+id/back_btn_page_two"
+        android:focusable="true" >
+
+        <LinearLayout
+            android:id="@+id/normal_line_ll"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/content_view_page_two_ll_layout_magin"
+            android:paddingTop="@dimen/content_view_page_two_ll_layout_magin" >
+
+            <TextView
+                android:id="@+id/normal_tv_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/normal_line_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/normal_grid_view_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:gravity="center"
+                android:horizontalSpacing="0.0dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.0px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cap_line_LL_Page_Two"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/content_view_page_two_ll_layout_magin"
+            android:paddingTop="@dimen/content_view_page_two_ll_layout_magin" >
+
+            <TextView
+                android:id="@+id/cap_line_title_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/cap_line_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/cab_line_grid_view_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:gravity="center"
+                android:horizontalSpacing="0.0dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.0px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/worl_line_LL_page_two"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/content_view_page_two_ll_layout_magin"
+            android:paddingTop="@dimen/content_view_page_two_ll_layout_magin" >
+
+            <TextView
+                android:id="@+id/worl_line_title_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/worl_line_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/worl_line_grid_view_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:gravity="center"
+                android:horizontalSpacing="0.0dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:textColor="@android:color/white"
+                android:verticalSpacing="0.0px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/youtube_line_LL_page_two"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/content_view_page_two_ll_layout_magin"
+            android:paddingTop="@dimen/content_view_page_two_ll_layout_magin" >
+
+            <TextView
+                android:id="@+id/youtube_line_title_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/youtube_line_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/youtube_line_grid_view_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:gravity="center"
+                android:horizontalSpacing="0.0dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:textColor="@android:color/white"
+                android:verticalSpacing="0.0px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/foolball_online_LL_Page_Two"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/content_view_page_two_ll_layout_magin"
+            android:paddingTop="@dimen/content_view_page_two_ll_layout_magin" >
+
+            <TextView
+                android:id="@+id/foolball_title_Page_Four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="@string/foolbal_online_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_folder_page_four"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/fooball_line_grid_view_page_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:gravity="center"
+                android:numColumns="1"
+                android:paddingLeft="5.0dip"
+                android:paddingTop="5.0dip"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wifiStatusPageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="70.0dip"
+        android:paddingTop="7.0dip"
+        android:src="@drawable/nowifi" />
+
+    <ImageView
+        android:id="@+id/reloadLinkPageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/wifiStatusPageTwo"
+        android:paddingRight="7.0dip"
+        android:paddingTop="7.0dip"
+        android:src="@drawable/reload_hover_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="status_bar_height">50.0dip</dimen>
+    <dimen name="text_size_setting_label">20.0dip</dimen>
+    <dimen name="text_size_title_page_four">20.0dip</dimen>
+    <dimen name="text_size_title_folder_page_four">25.0dip</dimen>
+    <dimen name="text_size_title_no_app_page_four">20.0dip</dimen>
+    <dimen name="padding">4.0dip</dimen>
+    <dimen name="galary_marginLeft_page_one">2.0dip</dimen>
+    <dimen name="galary_marginRight_page_one">40.0dip</dimen>
+    <dimen name="galary_height_page_one">650.0dip</dimen>
+    <dimen name="digital_clock_page_one_marginLeft">10.0dip</dimen>
+    <dimen name="digital_clock_page_one_textsize">35.0dip</dimen>
+    <dimen name="date_page_one_textsize">25.0dip</dimen>
+    <dimen name="gridview_app_page_one_padding">10.0dip</dimen>
+    <dimen name="gridview_app_page_one_horizontalSpacing">1.0dip</dimen>
+    <dimen name="title_marginLeft">15.0dip</dimen>
+    <dimen name="title_padding_top">8.0dip</dimen>
+    <dimen name="content_page_two_ll_layout_magin">10.0dip</dimen>
+    <dimen name="content_view_page_two_ll_layout_magin">10.0dip</dimen>
+    <dimen name="padding_for_item_in_gridView">2.0dip</dimen>
+    <dimen name="text_size_of_text_ytb">17.0dip</dimen>
+    <dimen name="text_size_of_text_channel">12.0dip</dimen>
+    <dimen name="pading_for_status_bar_item">20.0dip</dimen>
+    <dimen name="title_dialog_page_four">25.0dip</dimen>
+</resources>

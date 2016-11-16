@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_app_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/backgroundPopupIv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/contentPopupItemPageFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#ff111e63"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/control_popup_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#ff09144c" >
+
+                <TextView
+                    android:id="@+id/title_dialog_for_page_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5.0dip"
+                    android:gravity="center|right"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_dialog_page_four"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/close_pw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5.0dip"
+                    android:background="@drawable/custome_close_pw_p4_iv"
+                    android:focusable="true"
+                    android:gravity="center|left" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/no_apps_in_list_for_page_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_app_in_list"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_no_app_page_four" />
+
+            <GridView
+                android:id="@+id/gridview_for_dialog_page_four"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/add_App_Iv_for_page_four"
+                android:layout_below="@+id/control_popup_layout"
+                android:layout_marginTop="10.0dip"
+                android:background="#ff111e63"
+                android:columnWidth="130.0dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10.0dip" />
+
+            <ImageView
+                android:id="@+id/add_App_Iv_for_page_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10.0dip"
+                android:background="@drawable/custome_addapp_pw_p4_iv"
+                android:focusable="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/back_btn_for_scroll_view_page_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40.0dip"
+            android:background="@drawable/custome_back_list_app_pw_p4_iv"
+            android:focusable="true"
+            android:paddingLeft="10.0dip" />
+
+        <ImageView
+            android:id="@+id/next_btn_for_scroll_view_page_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40.0dip"
+            android:background="@drawable/custome_next_list_app_pw_p4_iv"
+            android:focusable="true"
+            android:paddingRight="10.0dip" />
+
+        <GridView
+            android:id="@+id/all_app_p4_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/next_btn_for_scroll_view_page_four"
+            android:layout_toRightOf="@+id/back_btn_for_scroll_view_page_four"
+            android:background="@drawable/bg_list_app_p4_iv"
+            android:focusable="true"
+            android:numColumns="9" />
+    </RelativeLayout>
+
+</FrameLayout>

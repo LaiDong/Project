@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_three_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/status_bar_for_page_three"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/status_bar_layout"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/show_status_bar_for_page_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custome_show_stb_iv"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/back_iv_for_page_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custome_back_activity_iv"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/next_iv_for_page_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custome_next_activity_iv"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/urlLL_page_three"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/next_iv_for_page_three"
+        android:layout_toRightOf="@+id/back_iv_for_page_three"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back_ws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/custome_back_ws_p3_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/next_ws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/custome_next_ws_p3_iv"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/reload_ws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/custome_reload_ws_p3_iv"
+            android:focusable="true" />
+
+        <RelativeLayout
+            android:id="@+id/control_ws"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/website_control_theme"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/link_ws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/custome_remove_ws_p3_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/list_ws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custome_list_ws_p3_iv"
+                android:focusable="true" >
+
+                <requestFocus />
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/add_list_ws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@+id/list_ws"
+                android:background="@drawable/custome_add_ws_p3_iv"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/search_ws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@+id/add_list_ws"
+                android:background="@drawable/custome_search_ws_p3_iv"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/link_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toLeftOf="@+id/search_ws"
+                android:layout_toRightOf="@+id/link_ws"
+                android:focusable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_for_page_three"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/status_bar_for_page_three"
+        android:layout_below="@+id/urlLL_page_three"
+        android:layout_toLeftOf="@+id/next_iv_for_page_three"
+        android:layout_toRightOf="@+id/back_iv_for_page_three"
+        android:focusable="true" />
+
+</RelativeLayout>

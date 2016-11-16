@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Black_transparent">#80000000</color>
+    <color name="gridview_color">#ffcccc99</color>
+    <color name="popup_window_bg">#ff09144c</color>
+    <color name="back_ground_galary_page_one">#ff006666</color>
+    <color name="item_list_view_color_bg">#ff333333</color>
+    <color name="blue">#00abea</color>
+    <color name="white">#ffffff</color>
+    <color name="item_text_color">#FFFFFFFF</color>
+</resources>
